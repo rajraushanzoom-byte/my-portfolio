@@ -23,18 +23,28 @@ html, body {
         }
         .web{
             color:white;
-            margin-left:20px;
             font-size:20px;
             font-family:Arial;
+            margin-left: 0;
+    font-size: 16px;
 
         }
         .web:hover{
             color:red;
         }
-        .header{
-            display:flex;
-            background-color:rgb(16, 16, 16);
-        }
+        .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(16, 16, 16);
+    margin-top: 10px;
+}
+.webdev {
+    margin: 12px 0;
+        margin-left: 15px;
+
+}
+
         .goto{
     margin-left: auto;
     padding-right: 30px;
@@ -42,6 +52,7 @@ html, body {
     gap:50px;
     font-size:20px;
     align-items:center;
+    
 }
         .color{
             color:white;
@@ -56,6 +67,7 @@ html, body {
         .Home3{
             color:greenyellow;
             text-decoration:none;
+            
         }
        .main {
     position: relative;
@@ -73,6 +85,10 @@ html, body {
     font-size: clamp(55px, 7vw, 90px);
     margin: 0;
     font-weight: 400;
+    
+}
+.developer {
+    margin-top: 105px;
 }
         
 .profile-image {
@@ -285,8 +301,7 @@ html, body {
             box-shadow: 0 0 15px greenyellow;
 }
 @media (max-width: 1024px) {
-
-    .web {
+.web {
         margin-left: 20px;
     }
     .goto {
@@ -397,6 +412,10 @@ html, body {
 
 
 @media (max-width: 600px) {
+.header {
+    flex-direction: column;
+    padding: 5px 0 10px;
+}
 
     .web {
         margin-left: 10px;

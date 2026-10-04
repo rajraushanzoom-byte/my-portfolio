@@ -11,18 +11,27 @@
 
         .web{
             color:white;
-            margin-left: 20px;
             font-size:20px;
-            font-family: Arial;
+            font-family:Arial;
+            margin-left: 0;
+    font-size: 16px;
 
         }
         .web:hover{
             color:red;
         }
-        .header{
-            display:flex;
-            background-color: rgb(16, 16, 16);
-        }
+        .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(16, 16, 16);
+    margin-top: 10px;
+}
+.webdev {
+    margin: 12px 0;
+    margin-left: 15px;
+}
+
         .goto{
     
     margin-left: auto;
@@ -31,6 +40,7 @@
     gap:50px;
     font-size:20px;
     align-items:center;
+    
 }
         .color{
             color:white;
@@ -127,6 +137,22 @@
 
 
 @media (max-width: 800px){
+    .header {
+    flex-direction: column;
+    padding: 5px 0 10px;
+}
+
+    .web {
+        margin-left: 10px;
+        font-size: 16px;
+    }
+
+    .goto {
+        padding-right: 10px;
+        gap: 10px;
+        font-size: 13px;
+    }
+
     .projects { 
         padding: 0 15px 40px;
      }

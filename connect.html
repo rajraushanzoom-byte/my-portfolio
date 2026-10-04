@@ -8,40 +8,51 @@
 
     <style>
         * {
-            box-sizing: border-box;
-        }
+    box-sizing: border-box;
+}
+html, body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
 
         body {
             background-color: black;
-            color: white;
-            font-family: Arial, sans-serif;
-            margin: 0;
         }
 
 
         .web{
             color:white;
-            margin-left: 20px;
             font-size:20px;
-            font-family: Arial;
+            font-family:Arial;
+                margin-left: 15px;
+    font-size: 16px;
 
         }
         .web:hover{
             color:red;
         }
-        .header{
-            display:flex;
-            background-color: rgb(16, 16, 16);
-            margin-top:10px;
-        }
+        .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(16, 16, 16);
+    margin-top: 10px;
+}
+.webdev {
+    margin: 12px 0;
+}
+
         .goto{
-            margin-top: 15px;
-            margin-left: auto;
-            display:flex;
-            gap:50px;
-            font-size:20px;
-            
-        }
+    margin-left: auto;
+    padding-right: 30px;
+    display:flex;
+    gap:50px;
+    font-size:20px;
+    align-items:center;
+    
+}
         .color{
             color:white;
             text-decoration: none;
@@ -179,20 +190,19 @@
 
         
     .header {
-        width: 100%;
-        min-height: 70px;
-        align-items: center;
-    }
+    flex-direction: column;
+    padding: 5px 0 10px;
+}
 
     .web {
-        margin-left: 20px;
+        margin-left: 10px;
+        font-size: 16px;
     }
 
     .goto {
-        margin-left: auto;
-        padding-right: 20px;
-        gap: 25px;
-        font-size: 18px;
+        padding-right: 10px;
+        gap: 10px;
+        font-size: 13px;
     }
 }
 
