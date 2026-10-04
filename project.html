@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <style>
+        body {
+             background-color: black;
+            }
+
+        .web{
+            color:white;
+            margin-left: 20px;
+            font-size:20px;
+            font-family: Arial;
+
+        }
+        .web:hover{
+            color:red;
+        }
+        .header{
+            display:flex;
+            background-color: rgb(16, 16, 16);
+        }
+        .goto{
+    
+    margin-left: auto;
+    padding-right: 30px;
+    display:flex;
+    gap:50px;
+    font-size:20px;
+    align-items:center;
+}
+        .color{
+            color:white;
+            text-decoration: none;
+            cursor:pointer;
+            font-family: Arial;
+            margin-right:10px;
+        }
+        .color:hover{
+            color:greenyellow;
+        }
+        .skill3 {
+             color: greenyellow;
+              text-decoration: none; 
+            }
+
+        
+        .title {
+            color: greenyellow; font-family: Arial; font-size: 50px;
+            text-align: center; margin: 40px 0;
+        }
+        .projects {
+    display: flex;
+    flex-direction: column;   /* this puts one card below the other */
+    gap: 40px;
+    padding: 0 60px 60px;
+}
+.card {
+    display: flex;            /* image left, text right */
+    background: rgb(16, 16, 16);
+    border: 1px solid white;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.3s;
+    width: 100%;
+}
+.card:hover {
+    border-color: greenyellow;
+    transform: translateY(-8px);
+    box-shadow: 0 0 15px greenyellow;
+}
+.card img {
+    width: 55%;
+    height: 450px;
+    object-fit: cover;
+    display: block;
+}
+.card-body {
+    width: 45%;
+    padding: 40px;
+    font-family: Arial;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.card-body h2 {
+     color: white;
+      font-size: 40px;
+       margin: 0 0 15px;
+     }
+.card-body p  { 
+    color: #bbb;
+     font-size: 20px;
+      line-height: 1.6;
+     }
+     .card.reverse {
+    flex-direction: column-reverse;  /* image below text */
+}
+.tags span    {
+     font-size: 16px;
+     color: #ccc;
+      background: #222;
+       padding: 5px 10px;
+        border-radius: 5px;
+         margin-right: 10px;
+          margin-top: 15px;
+         display: inline-block;
+        }
+.btn{ 
+    font-size: 18px;
+     padding: 14px 30px;
+     border-radius: 8px;
+      text-decoration: none;
+       color: white;
+        background-color: rgb(112, 159, 41);
+         margin-top: 25px;
+          display: inline-block;
+         transition: 0.3s;
+        }
+        .btw:hover{
+            background-color: rgb(55, 78, 22);
+            color: black;
+        }
+
+
+@media (max-width: 800px){
+    .projects { 
+        padding: 0 15px 40px;
+     }
+    .card {
+         flex-direction: column;
+         }
+    .card img, .card-body {
+         width: 100%;
+         }
+    .card img { 
+        height: 250px;
+     }
+    .card-body { 
+        padding: 25px;
+     }
+    .card-body h2 { 
+        font-size: 30px;
+     }
+}
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="web">
+    <p class="webdev">WebDev</p>
+    </div>
+    <div class="goto">
+        <a class="color" href="profile.html">HOME</a>
+<a class="color" href="skill.html">SKILLS</a>
+<a class="skill3" href="project.html">PROJECT</a>
+<a class="color" href="connect.html">CONNECT</a>
+    </div>
+    </div>
+    <h1 class="title">My Projects</h1>
+
+    <div class="projects">
+
+        
+        <div class="card">
+    <img src="Screenshot 2026-10-04 124232.png" alt="YouTube Clone">
+    <div class="card-body">
+        <h2>YouTube Clone</h2>
+        <p>A responsive copy of the YouTube home page. It has a sticky header with a search bar, a fixed sidebar, scrollable category buttons, and a video grid that changes from 3 columns to 2 to 1 depending on screen size.</p>
+        <div class="tags">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>Flexbox</span>
+            <span>Positioning</span>
+            <span>Responsive</span>
+        </div>
+        <div class="buttons">
+            <a class="btn" href="Images and Text Boxes and Display Property, div element/youtube.html" target="_blank">View Project</a>
+            <a class="btn outline" href="https://github.com/rajraushanzoom-byte/my-project-youtube-clone/blob/main/youtube.html" target="_blank">GitHub</a>
+        </div>
+    </div>
+</div>
+<div class="card">
+    <img src="Screenshot 2026-10-04 132043.png" alt="Portfolio Website">
+    <div class="card-body">
+        <h2>Portfolio Website</h2>
+        <p>My personal portfolio website with a Home, Skills, Projects and Connect page. It has a dark theme with a greenyellow glow, hover animations, a profile section with a resume button, and links to my GitHub, Instagram and LinkedIn.</p>
+        <div class="tags">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>Flexbox</span>
+            <span>Google Fonts</span>
+            <span>Hover Effects</span>
+        </div>
+        <div class="buttons">
+            <a class="btn" href="profile.html" target="_blank">View Project</a>
+            <a class="btn outline" href="https://github.com/rajraushanzoom-byte/portfolio" target="_blank">GitHub</a>
+        </div>
+    </div>
+</div>
+    </div>
+</body>
+</html>

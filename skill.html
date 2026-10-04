@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Skills</title>
+
+    <style>
+
+        body {
+            background-color: rgba(0, 0, 0, 1);
+            color: rgba(255, 255, 255, 1);
+            font-family: Arial;
+        }
+        .web{
+            color:rgba(255, 255, 255, 1);
+            margin-left: 20px;
+            font-size:20px;
+            font-family: Arial;
+
+        }
+        .web:hover{
+            color:rgba(255, 0, 0, 1);
+        }
+        .header{
+            display:flex;
+            background-color: rgba(16, 16, 16, 1);
+        }
+        .goto{
+            margin-top: 15px;
+            margin-left: 1250px;
+            display:flex;
+            gap:50px;
+            font-size:20px;
+            
+        }
+        .color{
+            color:rgba(255, 255, 255, 1);
+            text-decoration: none;
+            cursor:pointer;
+            font-family: Arial;
+            margin-right:10px;
+        }
+        .color:hover{
+            color:rgba(173, 255, 47, 1);
+        }
+        .skills3{
+            color:rgba(173, 255, 47, 1);
+            text-decoration: none;
+        }
+
+        .heading {
+            color: rgba(173, 255, 47, 1);
+            font-size: 45px;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .description {
+            color: rgba(204, 204, 204, 1);
+            font-size: 20px;
+            text-align: center;
+        }
+
+        .skills {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-top: 50px;
+        }
+
+        .card {
+            background-color: rgba(20, 20, 20, 1);
+            width: 280px;
+            padding: 20px;
+            border: 1px solid rgba(68, 68, 68, 1);
+            border-radius: 20px;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            border-color: rgba(173, 255, 47, 1);
+            transform: translateY(-8px);
+            box-shadow: 0 0 15px rgba(173, 255, 47, 1);
+        }
+
+        .card img {
+            width: 120px;
+            height: 120px;
+            object-fit: contain;
+            margin-top: 10px;
+        }
+
+        .card h2 {
+            color: rgba(173, 255, 47, 1);
+            font-size: 28px;
+        }
+
+        .card p {
+            color: rgba(255, 255, 255, 1);
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .education {
+            margin-top: 100px;
+            text-align: center;
+        }
+
+        .education h1 {
+            color: rgba(173, 255, 47, 1);
+            font-size: 45px;
+        }
+
+        .college {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+
+        .college-box {
+            background-color: rgba(20, 20, 20, 1);
+            border: 1px solid rgba(68, 68, 68, 1);
+            border-radius: 20px;
+            width: 350px;
+            padding: 25px;
+            transition: 0.3s;
+        }
+
+        .college-box:hover {
+            border-color: rgba(173, 255, 47, 1);
+            transform: translateY(-8px);
+             box-shadow: 0 0 15px rgba(173, 255, 47, 1);
+
+        }
+
+        .college-box img {
+            width: 100px;
+            height: 100px;
+            object-fit: contain;
+        }
+
+        .college-box h2 {
+            color: rgba(173, 255, 47, 1);
+        }
+
+        .college-box p {
+            color: rgba(255, 255, 255, 1);
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .status {
+            color: rgba(0, 0, 0, 1);
+            background-color: rgba(173, 255, 47, 1);
+            padding: 8px 15px;
+            border-radius: 20px;
+            display: inline-block;
+        }
+        @media screen and (min-width: 601px) and (max-width: 1024px) {
+
+            .header {
+                width: 100%;
+                min-height: 70px;
+                align-items: center;
+            }
+
+            .web {
+                margin-left: 20px;
+            }
+
+            .goto {
+                margin-left: auto;
+                padding-right: 20px;
+                gap: 25px;
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="web">
+    <p class="webdev">WebDev</p>
+    </div>
+    <div class="goto">
+        <a class="color" href="profile.html">HOME</a>
+                <a class="skills3" href="skill.html">SKILLS</a>
+                        <a class="color" href="project.html">PROJECT</a>
+                                                <a class="color" href="connect.html">CONNECT</a>
+
+    </div>
+    </div>
+
+    
+
+    <h1 class="heading">Technical Skills</h1>
+
+    <p class="description">
+        I am continuously learning and improving my programming skills.
+    </p>
+
+    <div class="skills">
+
+
+
+        <div class="card">
+
+            <img src="html5-original.svg"
+                 alt="HTML Logo">
+
+            <img src="css3-original.svg"
+                 alt="CSS Logo">
+
+            <h2>Frontend Development</h2>
+
+            <p>
+                I have built frontend web pages using HTML and CSS.
+                I can create page layouts, style elements, and
+                design attractive user interfaces.
+            </p>
+
+        </div>
+
+        
+
+        <div class="card">
+
+            <img src="java-original.svg"
+                 alt="Java Logo">
+
+            <h2>Java Programming</h2>
+
+            <p>
+                I am learning Java and solving programming problems
+                using basic concepts such as loops, conditions,
+                and logical thinking.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <img src="linux-original.svg"
+                 alt="Linux Logo">
+
+            <h2>Linux Programming</h2>
+
+            <p>
+                I use the Linux environment to write and run code.
+                I am learning Linux commands and practicing
+                programming through the terminal.
+            </p>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="education">
+
+        <h1>My Education</h1>
+
+        <p class="description">
+            Currently pursuing my education in Computer Science,
+            Artificial Intelligence, and Data Science.
+        </p>
+
+        <div class="college">
+
+
+            <div class="college-box">
+
+                <img src="44bd779e-979b-426d-b13c-02d4a3e524b6.png"
+                     alt="Programming Logo">
+
+                <h2>Scaler School of Technology</h2>
+
+                <p>
+                    I am currently studying Computer Science
+                    and Artificial Intelligence.
+                </p>
+
+                <span class="status">Currently Studying</span>
+
+            </div>
+
+
+            <div class="college-box">
+
+                <img src="IIT_Madras_Logo.svg"
+                     alt="IIT Madras Logo">
+
+                <h2>IIT Madras</h2>
+
+                <p>
+                    I am pursuing the BS degree in
+                    Data Science and Applications.
+                </p>
+
+                <span class="status">Currently Studying</span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,467 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protfolio Website</title>
+    
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@700&family=Orbitron:wght@700&family=Poppins:wght@600&family=Pacifico&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background-color: black;
+        }
+        .web{
+            color:white;
+            margin-left:20px;
+            font-size:20px;
+            font-family:Arial;
+
+        }
+        .web:hover{
+            color:red;
+        }
+        .header{
+            display:flex;
+            background-color:rgb(16, 16, 16);
+        }
+        .goto{
+    margin-left: auto;
+    padding-right: 30px;
+    display:flex;
+    gap:50px;
+    font-size:20px;
+    align-items:center;
+}
+        .color{
+            color:white;
+            text-decoration: none;
+            cursor:pointer;
+            font-family: Arial;
+            margin-right:10px;
+        }
+        .color:hover{
+            color:greenyellow;
+        }
+        .Home3{
+            color:greenyellow;
+            text-decoration:none;
+        }
+       .main {
+    position: relative;
+}
+ 
+
+.text {
+    margin-left: 30px;
+}
+
+.developer,
+.developer1{
+    color: rgb(153, 255, 0);
+    font-family: 'Great Vibes', cursive;
+    font-size: 120px;
+    margin: 0;
+    font-weight: 400;
+}
+        
+.profile-image{
+    position: absolute;
+    top:150px;
+    right:80px;
+    text-align:center;
+    z-index:10;   
+}
+
+.image1{
+    height:500px;
+    width:500px;
+    border-radius:400px;
+    border:2px solid greenyellow;
+    transition:all 0.3s ease;
+    box-sizing:border-box;
+    display:block;
+}
+
+.image1:hover{
+    border-color:greenyellow;
+    transform:translateY(-8px);
+    box-shadow:0 0 15px greenyellow;
+}
+
+.resume-button {
+    display:inline-block;
+    margin-top:55px;
+    padding: 12px 30px;
+    background-color: greenyellow;
+    color: black;
+    text-decoration: none;
+    font-family: Arial;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.resume-button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px greenyellow;
+}
+.raj-name {
+            color: greenyellow;
+            font-family: 'Playfair Display', serif;   
+            font-size: 100px;
+            margin-left: 30px;
+            margin-top: 30px;
+        }
+
+        .qoute{
+            color:rgb(127, 237, 127);
+            font-size:42px;
+            margin-left:50px;
+            font-family:Arial;
+            font-style:italic;
+            margin-top:130px;
+
+        }
+
+        .technical{
+            color:white;
+            margin-left:30px;
+            font-size:50px;
+            font-family:Arial;
+            margin-top:100px;
+        }
+        .fronted{
+            color: white;
+            background-color:rgb(0, 0, 0);
+            padding-left:100px;
+            padding-right:100px;
+            font-size:40px;
+            cursor:pointer;
+            border:1px solid;
+            margin-left:40px;
+            transition:0.3s;
+            flex: 1 1 0;
+            min-width: 0;
+        }
+        .fronted:hover{
+            border-color: greenyellow;
+            transform: translateY(-8px);
+            box-shadow: 0 0 15px greenyellow;
+            
+        }
+        .logo1{
+            height:200px;
+            width:200px;
+        }
+        
+        .java{
+            color: white;
+            background-color:rgb(0, 0, 0);
+            padding-left:150px;
+            padding-right:150px;
+            font-size:40px;
+            cursor:pointer;
+            border:1px solid; 
+            transition:0.3s;
+            flex: 1 1 0;
+            min-width: 0;
+        }
+        .java:hover{
+            border-color: greenyellow;
+            transform: translateY(-8px);
+            box-shadow: 0 0 15px greenyellow;
+        }
+        .logo2{
+            height:200px;
+            width:200px;
+        }
+        .experience{
+            display: flex;
+            gap: 40px;
+        }
+        .linux{
+            color: white;
+            background-color:rgb(0, 0, 0);
+            padding-left:150px;
+            padding-right:150px;
+            font-size:40px;
+            cursor:pointer;
+            border:1px solid; 
+            transition: 0.3s;
+            flex: 1 1 0;
+            min-width: 0;
+        }
+        .linux:hover{
+            border-color: greenyellow;
+            transform: translateY(-8px);
+            box-shadow: 0 0 15px greenyellow;
+        }
+        .logo3{
+            height:200px;
+            width:200px;
+        }
+        
+        .last2 {
+    
+    text-decoration: none;
+    margin-top: 200px;
+    font-size:20px;
+    color: antiquewhite;
+    transition:0.3s;
+    
+}
+
+.last1{
+    display:flex;
+    justify-content: center;
+}
+.last{
+    display: flex;
+    gap: 20px;
+    align-items:center;
+    justify-content: center;
+    
+}
+.github{
+    height:50px;
+    width: 50px;
+    border-radius: 250px;
+    border-color:aliceblue;
+    cursor:pointer;
+    transition: 0.3s;
+    
+}
+.github:hover{
+    border-color: greenyellow;
+            transform: translateY(-8px);
+            box-shadow: 0 0 15px greenyellow;
+}
+
+
+.linkdin{
+    height:70px;
+    width: 70px;
+    cursor:pointer;
+     border-radius: 250px;
+     transition:0.3s;
+}
+.linkdin:hover{
+    border-color: greenyellow;
+            transform: translateY(-8px);
+            box-shadow: 0 0 15px greenyellow;
+}
+.instagram{
+    height:70px;
+    width: 70px;
+    margin:30px;
+    cursor:pointer;
+    border-radius:15px;
+    transition:0.3s;
+     
+}
+.instagram:hover{
+    border-color: greenyellow;
+            transform: translateY(-8px);
+            box-shadow: 0 0 15px greenyellow;
+}
+@media (max-width: 1024px) {
+
+    .web {
+        margin-left: 20px;
+    }
+    .goto {
+        padding-right: 20px;
+        gap: 25px;
+        font-size: 18px;
+    }
+
+    .developer,
+    .developer1 {
+        font-size: 80px;
+    }
+
+    .profile-image {
+        position: static;
+        margin: 30px auto;
+    }
+    .image1 {
+        height: 350px;
+        width: 350px;
+        margin: 0 auto;
+    }
+
+    .raj-name {
+        font-size: 60px;
+    }
+    .qoute {
+        font-size: 30px;
+        margin-top: 40px;
+    }
+    .technical {
+        font-size: 40px;
+    }
+
+    .experience {
+        flex-direction: column;
+        padding: 0 30px;
+        gap: 25px;
+    }
+    .fronted,
+    .java,
+    .linux {
+        flex: none;
+        margin-left: 0;
+        padding: 20px;
+    }
+
+    .last2 {
+        margin-top: 80px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .web {
+        margin-left: 10px;
+        font-size: 16px;
+    }
+    .goto {
+        padding-right: 10px;
+        gap: 12px;
+        font-size: 14px;
+    }
+
+    .text {
+        margin-left: 15px;
+    }
+    .developer,
+    .developer1 {
+        font-size: 55px;
+    }
+
+    .image1 {
+        height: 250px;
+        width: 250px;
+    }
+
+    .raj-name {
+        font-size: 36px;
+        margin-left: 15px;
+    }
+    .qoute {
+        font-size: 20px;
+        margin-left: 15px;
+        margin-top: 30px;
+    }
+    .technical {
+        font-size: 30px;
+        margin-left: 15px;
+    }
+
+    .experience {
+        padding: 0 15px;
+    }
+    .fronted,
+    .java,
+    .linux {
+        font-size: 26px;
+    }
+    .logo1,
+    .logo2,
+    .logo3 {
+        height: 120px;
+        width: 120px;
+    }
+
+    .last2 {
+        font-size: 14px;
+        margin-top: 50px;
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="web">
+    <p class="webdev">WebDev</p>
+    </div>
+    <div class="goto">
+        <a class="Home3" href="profile.html">HOME</a>
+<a class="color" href="skill.html">SKILLS</a>
+<a class="color" href="project.html">PROJECT</a>
+<a class="color" href="connect.html">CONNECT</a>
+    </div>
+    </div>
+    
+         <div class="main">
+            <div class="text">
+    <h1 class="developer">WEB</h1><br>
+    <h1 class="developer1">Developer</h1>
+</div>
+        
+     <div class="profile-image">
+    <img class="image1"
+         src="WhatsApp Image 2026-09-16 at 00.55.38.jpeg"
+         alt="image1">
+
+    <a class="resume-button" href="resume.html" target="_blank">
+        View Resume
+    </a>
+</div>
+</div>
+        <div class="main">
+        <div class="raj-name">
+            My name is Raj
+        </div>
+
+        
+    <p class="qoute">*I'm not just writing code, I'm building experiences.<br>
+Every line of code turns an idea into reality.
+
+<br><br>
+*Specializing in modern web development 
+</p>
+
+
+<p class="technical">Technical Expertise</p>
+<div class="experience">
+    <button class="fronted"> <img class="logo1" src="code-icon-black-background-black-flat-style-vector-illustration-code-icon-black-background-black-flat-style-vector-168420814.webp" alt="logo1"><br>
+    Frontend Development<br>
+    HTML CSS
+</button>
+<button class="java"> <img class="logo2" src="images (1).png" alt="logo2"><br>
+    JAVA<br>
+    Programming 
+</button>
+<button class="linux"> <img class="logo3" src="images (2).png" alt="logo3"><br>
+    Linux <br>
+      Programming
+    </button>
+    <hr>
+
+</div>
+<div class="last1">
+<a class="last2" href="profile.html">@ 2026 WebDev.All right reserved, </a>
+</div>
+<div class="last">
+<a href="https://github.com/rajraushanzoom-byte" target="_blank">
+    <img class="github" src="images.png" alt="github">
+    
+</a>
+<a href="https://www.instagram.com/raj_raushan578?stkn=Y3Z3NXV5b2hjemQw" target="_blank">
+<img class="instagram" src="instagram-white-outline-icon-vector-56237086.jpg" alt="instagram">
+</a>
+
+<a href="https://www.linkedin.com/in/raj-raushan-kumar-4a2b07406/" target="_blank">
+    <img class="linkdin" src="6bab3017350ca04c6fa05569672bd31e.jpg" alt="linkdin">
+</a>
+</div>
+
+
+
+
+</div>
+</body>
+</html>
