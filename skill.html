@@ -12,53 +12,42 @@
             color: rgba(255, 255, 255, 1);
             font-family: Arial;
         }
-        .web{
-            color:white;
-            font-size:20px;
-            font-family:Arial;
-            margin-left: 0;
-    font-size: 16px;
+        * { box-sizing: border-box; }
 
-        }
-        .web:hover{
-            color:red;
-        }
-        .header {
+.navbar {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    background-color: rgb(16, 16, 16);
-    margin-top: 10px;
-}
-.webdev {
-    margin: 12px 0;
-        margin-left: 15px;
-
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 12px 20px;
+    background: #111;
 }
 
-        .goto{
-    margin-left: auto;
-    padding-right: 30px;
-    display:flex;
-    gap:50px;
-    font-size:20px;
-    align-items:center;
-    
+.logo {
+    color: white;
+    font-size: 1.4rem;
+    margin: 0;
 }
-        .color{
-            color:white;
-            text-decoration: none;
-            cursor:pointer;
-            font-family: Arial;
-            margin-right:10px;
-        }
-        .color:hover{
-            color:greenyellow;
-        }
-        .skills3{
-            color:rgba(173, 255, 47, 1);
-            text-decoration: none;
-        }
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: greenyellow;
+}
+
 
         .heading {
             color: rgba(173, 255, 47, 1);
@@ -83,7 +72,7 @@
 
         .card {
             background-color: rgba(20, 20, 20, 1);
-            width: 280px;
+            width: 380px;
             padding: 20px;
             border: 1px solid rgba(68, 68, 68, 1);
             border-radius: 20px;
@@ -172,42 +161,45 @@
             border-radius: 20px;
             display: inline-block;
         }
-        @media screen and (min-width: 601px) and (max-width: 1024px) {
+        @media (max-width: 1024px) {
+    .navbar {
+        padding: 12px 30px;
+    }
 
-            .header {
-                width: 100%;
-                min-height: 70px;
-                align-items: center;
-            }
+    .nav-links {
+        gap: 20px;
+    }
+}
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        gap: 8px;
+        padding: 10px;
+    }
 
-            .web {
-                margin-left: 20px;
-            }
+    .nav-links {
+        width: 100%;
+        justify-content: space-around;
+        gap: 0;
+    }
 
-            .goto {
-                margin-left: auto;
-                padding-right: 20px;
-                gap: 25px;
-                font-size: 18px;
-            }
-        }
+    .nav-links a {
+        font-size: 0.85rem;
+    }
+}
     </style>
 </head>
 
 <body>
-    <div class="header">
-        <div class="web">
-    <p class="webdev">WebDev</p>
-    </div>
-    <div class="goto">
-        <a class="color" href="index.html">HOME</a>
-                <a class="skills3" href="skill.html">SKILLS</a>
-                        <a class="color" href="project.html">PROJECT</a>
-                                                <a class="color" href="connect.html">CONNECT</a>
-
-    </div>
-    </div>
-
+    <nav class="navbar">
+    <h1 class="logo">WebDev</h1>
+    <ul class="nav-links">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="skill.html" class="active">SKILLS</a></li>
+        <li><a href="project.html">PROJECT</a></li>
+        <li><a href="connect.html">CONNECT</a></li>
+    </ul>
+</nav>
     
 
     <h1 class="heading">Technical Skills</h1>

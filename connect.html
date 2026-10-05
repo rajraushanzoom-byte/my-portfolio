@@ -7,62 +7,47 @@
     <title>Connect With Me</title>
 
     <style>
-        * {
-    box-sizing: border-box;
+        body {
+            background-color: rgba(0, 0, 0, 1);
+            color: rgba(255, 255, 255, 1);
+            font-family: Arial;
+        }
+        * { box-sizing: border-box; }
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 12px 20px;
+    background: #111;
 }
-html, body {
-    width: 100%;
+
+.logo {
+    color: white;
+    font-size: 1.4rem;
+    margin: 0;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+    list-style: none;
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
 }
 
-        body {
-            background-color: black;
-        }
-
-
-        .web{
-            color:white;
-            font-size:20px;
-            font-family:Arial;
-                margin-left: 15px;
-    font-size: 16px;
-
-        }
-        .web:hover{
-            color:red;
-        }
-        .header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: rgb(16, 16, 16);
-    margin-top: 10px;
-}
-.webdev {
-    margin: 12px 0;
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
 }
 
-        .goto{
-    margin-left: auto;
-    padding-right: 30px;
-    display:flex;
-    gap:50px;
-    font-size:20px;
-    align-items:center;
-    
+.nav-links a:hover,
+.nav-links a.active {
+    color: greenyellow;
 }
-        .color{
-            color:white;
-            text-decoration: none;
-            cursor:pointer;
-            font-family: Arial;
-            margin-right:10px;
-        }
-        .color:hover{
-            color:greenyellow;
-        }
+
         .connect-active{
             color:greenyellow;
             text-decoration: none;
@@ -161,19 +146,27 @@ html, body {
             padding: 20px;
             margin-top: 60px;
         }
+@media (max-width: 1024px) {
+    .navbar {
+        padding: 12px 30px;
+    }
 
+    .nav-links {
+        gap: 20px;
+    }
+}
 
-        @media (max-width: 600px) {
-            .header {
-                justify-content: center;
-            }
+       
+        @media screen and (max-width: 601px) {
 
-            .goto {
-                justify-content: center;
-                gap: 18px;
-            }
+        .navbar {
+        padding: 12px 30px;
+    }
 
-            .heading {
+    .nav-links {
+        gap: 20px;
+    }
+    .heading {
                 font-size: 35px;
             }
 
@@ -185,26 +178,8 @@ html, body {
                 width: 100%;
                 max-width: 350px;
             }
-        }
-        @media screen and (min-width: 601px) and (max-width: 1024px) {
-
-        
-    .header {
-    flex-direction: column;
-    padding: 5px 0 10px;
 }
-
-    .web {
-        margin-left: 10px;
-        font-size: 16px;
-    }
-
-    .goto {
-        padding-right: 10px;
-        gap: 10px;
-        font-size: 13px;
-    }
-}
+            
 
     </style>
 </head>
@@ -212,24 +187,16 @@ html, body {
 <body>
 
 
-    <div class="header">
-
-        <p class="web">WebDev</p>
-
-        <div class="goto">
-            <a class="color" href="index.html">HOME</a>
-
-            <a class="color" href="skill.html">SKILLS</a>
-
-            <a class="color" href="project.html">PROJECT</a>
-
-            <a class="connect-active" href="connect.html">
-                CONNECT
-            </a>
-        </div>
-
-    </div>
-
+    <nav class="navbar">
+    <h1 class="logo">WebDev</h1>
+    <ul class="nav-links">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="skill.html" >SKILLS</a></li>
+        <li><a href="project.html">PROJECT</a></li>
+        <li><a href="connect.html" class="active"
+            >CONNECT</a></li>
+    </ul>
+</nav>
 
     <h1 class="heading">Connect With Me</h1>
 

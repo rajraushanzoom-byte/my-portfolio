@@ -5,228 +5,294 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects</title>
     <style>
-        body {
-             background-color: black;
-            }
-
-        .web{
-            color:white;
-            font-size:20px;
-            font-family:Arial;
-            margin-left: 0;
-    font-size: 16px;
-
-        }
-        .web:hover{
-            color:red;
-        }
-        .header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: rgb(16, 16, 16);
-    margin-top: 10px;
-}
-.webdev {
-    margin: 12px 0;
-    margin-left: 15px;
-}
-
-        .goto{
-    
-    margin-left: auto;
-    padding-right: 30px;
-    display:flex;
-    gap:50px;
-    font-size:20px;
-    align-items:center;
-    
-}
-        .color{
-            color:white;
-            text-decoration: none;
-            cursor:pointer;
+       body {
+            background-color: rgba(0, 0, 0, 1);
+            color: rgba(255, 255, 255, 1);
             font-family: Arial;
-            margin-right:10px;
         }
-        .color:hover{
-            color:greenyellow;
-        }
-        .skill3 {
-             color: greenyellow;
-              text-decoration: none; 
-            }
+        * { box-sizing: border-box; }
 
-        
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 12px 20px;
+    background: #111;
+}
+
+.logo {
+    color: white;
+    font-size: 1.4rem;
+    margin: 0;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: greenyellow;
+}
+
         .title {
-            color: greenyellow; font-family: Arial; font-size: 50px;
-            text-align: center; margin: 40px 0;
+            color: greenyellow;
+            font-size: 50px;
+            text-align: center;
+            margin: 40px 0;
         }
+
         .projects {
-    display: flex;
-    flex-direction: column;   
-    gap: 40px;
-    padding: 0 60px 60px;
-}
-.card {
-    display: flex;            
-    background: rgb(16, 16, 16);
-    border: 1px solid white;
-    border-radius: 12px;
-    overflow: hidden;
-    transition: 0.3s;
-    width: 100%;
-}
-.card:hover {
-    border-color: greenyellow;
-    transform: translateY(-8px);
-    box-shadow: 0 0 15px greenyellow;
-}
-.card img {
-    width: 55%;
-    height: 450px;
-    object-fit: cover;
-    display: block;
-}
-.card-body {
-    width: 45%;
-    padding: 40px;
-    font-family: Arial;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-.card-body h2 {
-     color: white;
-      font-size: 40px;
-       margin: 0 0 15px;
-     }
-.card-body p  { 
-    color: #bbb;
-     font-size: 20px;
-      line-height: 1.6;
-     }
-     .card.reverse {
-    flex-direction: column-reverse;  /* image below text */
-}
-.tags span    {
-     font-size: 16px;
-     color: #ccc;
-      background: #222;
-       padding: 5px 10px;
-        border-radius: 5px;
-         margin-right: 10px;
-          margin-top: 15px;
-         display: inline-block;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            padding: 0 60px 60px;
         }
-.btn{ 
-    font-size: 18px;
-     padding: 14px 30px;
-     border-radius: 8px;
-      text-decoration: none;
-       color: white;
-        background-color: rgb(112, 159, 41);
-         margin-top: 25px;
-          display: inline-block;
-         transition: 0.3s;
+
+        .card {
+            display: flex;
+            background: rgb(16, 16, 16);
+            border: 1px solid white;
+            border-radius: 12px;
+            overflow: hidden;
+            transition: 0.3s;
+            width: 100%;
         }
-        .btw:hover{
-            background-color: rgb(55, 78, 22);
+
+        .card:hover {
+            border-color: greenyellow;
+            transform: translateY(-8px);
+            box-shadow: 0 0 15px greenyellow;
+        }
+
+        .card img {
+            width: 55%;
+            height: 450px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .card-body {
+            width: 45%;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .card-body h2 {
+            color: white;
+            font-size: 40px;
+            margin: 0 0 15px;
+        }
+
+        .card-body p {
+            color: #bbb;
+            font-size: 20px;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        .tags span {
+            font-size: 16px;
+            color: #ccc;
+            background: #222;
+            padding: 5px 10px;
+            border-radius: 5px;
+            margin-right: 10px;
+            margin-top: 15px;
+            display: inline-block;
+        }
+
+        .buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .btn {
+            font-size: 18px;
+            padding: 14px 30px;
+            border-radius: 8px;
+            text-decoration: none;
+            color: white;
+            background-color: rgb(112, 159, 41);
+            border: 2px solid rgb(112, 159, 41);
+            margin-top: 25px;
+            display: inline-block;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background-color: greenyellow;
+            border-color: greenyellow;
             color: black;
         }
 
+        .btn.outline {
+            background-color: transparent;
+            border-color: greenyellow;
+            color: greenyellow;
+        }
 
-@media (max-width: 800px){
-    .header {
-    flex-direction: column;
-    padding: 5px 0 10px;
-}
+        .btn.outline:hover {
+            background-color: greenyellow;
+            color: black;
+        }
 
-    .web {
-        margin-left: 10px;
-        font-size: 16px;
-    }
+        @media (max-width: 1024px) {
+            .navbar {
+                padding: 12px 30px;
+            }
 
-    .goto {
-        padding-right: 10px;
-        gap: 10px;
-        font-size: 13px;
-    }
+            .nav-links {
+                gap: 20px;
+            }
 
-    .projects { 
-        padding: 0 15px 40px;
-     }
-    .card {
-         flex-direction: column;
-         }
-    .card img, .card-body {
-         width: 100%;
-         }
-    .card img { 
-        height: 250px;
-     }
-    .card-body { 
-        padding: 25px;
-     }
-    .card-body h2 { 
-        font-size: 30px;
-     }
-}
+            .projects {
+                padding: 0 20px 40px;
+            }
+
+            .card {
+                flex-direction: column;
+            }
+
+            .card img,
+            .card-body {
+                width: 100%;
+            }
+
+            .card img {
+                height: 280px;
+            }
+
+            .card-body {
+                padding: 25px;
+            }
+
+            .card-body h2 {
+                font-size: 30px;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .navbar {
+                flex-direction: column;
+                gap: 8px;
+                padding: 10px;
+            }
+
+            .nav-links {
+                width: 100%;
+                justify-content: space-around;
+                gap: 0;
+            }
+
+            .nav-links a {
+                font-size: 0.85rem;
+            }
+
+            .title {
+                font-size: 32px;
+                margin: 25px 0;
+            }
+
+            .projects {
+                padding: 0 15px 40px;
+                gap: 25px;
+            }
+
+            .card img {
+                height: 200px;
+            }
+
+            .card-body {
+                padding: 20px;
+            }
+
+            .card-body h2 {
+                font-size: 26px;
+            }
+
+            .card-body p {
+                font-size: 17px;
+            }
+
+            .tags span {
+                font-size: 14px;
+            }
+
+            .btn {
+                font-size: 16px;
+                padding: 12px 22px;
+            }
+        }
     </style>
 </head>
 <body>
-    <div class="header">
-        <div class="web">
-    <p class="webdev">WebDev</p>
-    </div>
-    <div class="goto">
-        <a class="color" href="index.html">HOME</a>
-<a class="color" href="skill.html">SKILLS</a>
-<a class="skill3" href="project.html">PROJECT</a>
-<a class="color" href="connect.html">CONNECT</a>
-    </div>
-    </div>
+    <nav class="navbar">
+        <h1 class="logo">WebDev</h1>
+        <ul class="nav-links">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="skill.html">SKILLS</a></li>
+            <li><a href="project.html" class="active">PROJECT</a></li>
+            <li><a href="connect.html">CONNECT</a></li>
+        </ul>
+    </nav>
+
     <h1 class="title">My Projects</h1>
 
     <div class="projects">
 
-        
         <div class="card">
-    <img src="Screenshot 2026-10-04 124232.png" alt="YouTube Clone">
-    <div class="card-body">
-        <h2>YouTube Clone</h2>
-        <p>A responsive copy of the YouTube home page. It has a sticky header with a search bar, a fixed sidebar, scrollable category buttons, and a video grid that changes from 3 columns to 2 to 1 depending on screen size.</p>
-        <div class="tags">
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>Flexbox</span>
-            <span>Positioning</span>
-            <span>Responsive</span>
+            <img src="Screenshot 2026-10-04 124232.png" alt="YouTube Clone">
+            <div class="card-body">
+                <h2>YouTube Clone</h2>
+                <p>A responsive copy of the YouTube home page. It has a sticky header with a search bar, a fixed sidebar, scrollable category buttons, and a video grid that changes from 3 columns to 2 to 1 depending on screen size.</p>
+                <div class="tags">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>Flexbox</span>
+                    <span>Positioning</span>
+                    <span>Responsive</span>
+                </div>
+                <div class="buttons">
+                    <a class="btn" href="Images and Text Boxes and Display Property, div element/youtube.html" target="_blank">View Project</a>
+                    <a class="btn outline" href="https://github.com/rajraushanzoom-byte/my-project-youtube-clone/blob/main/youtube.html" target="_blank">GitHub</a>
+                </div>
+            </div>
         </div>
-        <div class="buttons">
-            <a class="btn" href="Images and Text Boxes and Display Property, div element/youtube.html" target="_blank">View Project</a>
-            <a class="btn outline" href="https://github.com/rajraushanzoom-byte/my-project-youtube-clone/blob/main/youtube.html" target="_blank">GitHub</a>
+
+        <div class="card">
+            <img src="Screenshot 2026-10-04 132043.png" alt="Portfolio Website">
+            <div class="card-body">
+                <h2>Portfolio Website</h2>
+                <p>My personal portfolio website with a Home, Skills, Projects and Connect page. It has a dark theme with a greenyellow glow, hover animations, a profile section with a resume button, and links to my GitHub, Instagram and LinkedIn.</p>
+                <div class="tags">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>Flexbox</span>
+                    <span>Google Fonts</span>
+                    <span>Hover Effects</span>
+                </div>
+                <div class="buttons">
+                    <a class="btn" href="index.html" target="_blank">View Project</a>
+                    <a class="btn outline" href="https://github.com/rajraushanzoom-byte/my-portfolio/blob/main/profile.html" target="_blank">GitHub</a>
+                </div>
+            </div>
         </div>
-    </div>
-</div>
-<div class="card">
-    <img src="Screenshot 2026-10-04 132043.png" alt="Portfolio Website">
-    <div class="card-body">
-        <h2>Portfolio Website</h2>
-        <p>My personal portfolio website with a Home, Skills, Projects and Connect page. It has a dark theme with a greenyellow glow, hover animations, a profile section with a resume button, and links to my GitHub, Instagram and LinkedIn.</p>
-        <div class="tags">
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>Flexbox</span>
-            <span>Google Fonts</span>
-            <span>Hover Effects</span>
-        </div>
-        <div class="buttons">
-            <a class="btn" href="profile.html" target="_blank">View Project</a>
-            <a class="btn outline" href="https://github.com/rajraushanzoom-byte/my-portfolio/blob/main/profile.html" target="_blank">GitHub</a>
-        </div>
-    </div>
-</div>
+
     </div>
 </body>
 </html>

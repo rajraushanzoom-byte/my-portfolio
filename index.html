@@ -8,67 +8,49 @@
 <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@700&family=Orbitron:wght@700&family=Poppins:wght@600&family=Pacifico&display=swap" rel="stylesheet">
     <style>
-        * {
-    box-sizing: border-box;
+       
+            
+        body {
+            background-color: rgba(0, 0, 0, 1);
+            color: rgba(255, 255, 255, 1);
+            font-family: Arial;
+        }
+        * { box-sizing: border-box; }
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 12px 20px;
+    background: #111;
 }
-html, body {
-    width: 100%;
+
+.logo {
+    color: white;
+    font-size: 1.4rem;
+    margin: 0;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+    list-style: none;
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
 }
 
-        body{
-            background-color: black;
-        }
-        .web{
-            color:white;
-            font-size:20px;
-            font-family:Arial;
-            margin-left: 0;
-    font-size: 16px;
-
-        }
-        .web:hover{
-            color:red;
-        }
-        .header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: rgb(16, 16, 16);
-    margin-top: 10px;
-}
-.webdev {
-    margin: 12px 0;
-        margin-left: 15px;
-
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
 }
 
-        .goto{
-    margin-left: auto;
-    padding-right: 30px;
-    display:flex;
-    gap:50px;
-    font-size:20px;
-    align-items:center;
-    
+.nav-links a:hover,
+.nav-links a.active {
+    color: greenyellow;
 }
-        .color{
-            color:white;
-            text-decoration: none;
-            cursor:pointer;
-            font-family: Arial;
-            margin-right:10px;
-        }
-        .color:hover{
-            color:greenyellow;
-        }
-        .Home3{
-            color:greenyellow;
-            text-decoration:none;
-            
-        }
+
        .main {
     position: relative;
 }
@@ -300,67 +282,16 @@ html, body {
             transform: translateY(-8px);
             box-shadow: 0 0 15px greenyellow;
 }
-@media (max-width: 1024px) {
-.web {
-        margin-left: 20px;
-    }
-    .goto {
-        padding-right: 20px;
-        gap: 25px;
-        font-size: 18px;
-    }
-
-    .developer,
-    .developer1 {
-        font-size: 80px;
-    }
-
-    .profile-image {
-        position: static;
-        margin: 30px auto;
-    }
-    .image1 {
-        height: 350px;
-        width: 350px;
-        margin: 0 auto;
-    }
-
-    .raj-name {
-        font-size: 60px;
-    }
-    .qoute {
-        font-size: 30px;
-        margin-top: 40px;
-    }
-    .technical {
-        font-size: 40px;
-    }
-
-    .experience {
-        flex-direction: column;
-        padding: 0 30px;
-        gap: 25px;
-    }
-    .fronted,
-    .java,
-    .linux {
-        flex: none;
-        margin-left: 0;
-        padding: 20px;
-    }
-
-    .last2 {
-        margin-top: 80px;
-    }
-}
 
 @media (max-width: 1024px) {
-
-    .goto {
-        padding-right: 20px;
-        gap: 25px;
-        font-size: 18px;
+.navbar {
+        padding: 12px 30px;
     }
+
+    .nav-links {
+        gap: 20px;
+    }
+    
 
     .developer,
     .developer1 {
@@ -412,21 +343,21 @@ html, body {
 
 
 @media (max-width: 600px) {
-.header {
+.navbar {
     flex-direction: column;
-    padding: 5px 0 10px;
+    gap: 8px;
+    padding: 10px;
 }
 
-    .web {
-        margin-left: 10px;
-        font-size: 16px;
-    }
+.nav-links {
+    width: 100%;
+    justify-content: space-around;
+    gap: 0;
+}
 
-    .goto {
-        padding-right: 10px;
-        gap: 10px;
-        font-size: 13px;
-    }
+.nav-links a {
+    font-size: 0.85rem;
+}
 
     .text {
         margin-left: 15px;
@@ -486,17 +417,15 @@ html, body {
     </style>
 </head>
 <body>
-    <div class="header">
-        <div class="web">
-    <p class="webdev">WebDev</p>
-    </div>
-    <div class="goto">
-        <a class="Home3" href="index.html">HOME</a>
-<a class="color" href="skill.html">SKILLS</a>
-<a class="color" href="project.html">PROJECT</a>
-<a class="color" href="connect.html">CONNECT</a>
-    </div>
-    </div>
+    <nav class="navbar">
+    <h1 class="logo">WebDev</h1>
+    <ul class="nav-links">
+        <li><a href="index.html" class="active">HOME</a></li>
+        <li><a href="skill.html" >SKILLS</a></li>
+        <li><a href="project.html">PROJECT</a></li>
+        <li><a href="connect.html">CONNECT</a></li>
+    </ul>
+</nav>
     
          <div class="main">
             <div class="text">
